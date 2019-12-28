@@ -1,0 +1,55 @@
+import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
+
+import '../my-info-panel.js';
+
+<Meta 
+  title="MyInfoPanel"
+  parameters={{
+    component: "my-info-panel",
+    options: { selectedPanel: "storybookjs/knobs/panel" }
+  }}
+/>
+
+# MyInfoPanel
+
+A component for...
+
+## Features:
+
+- a
+- b
+- ...
+
+## How to use
+
+### Installation
+
+```bash
+yarn add my-info-panel
+```
+
+```js
+import 'my-info-panel/my-info-panel.js';
+```
+
+<Preview withToolbar>
+  <Story name="Simple">
+    {html`
+      <my-info-panel></my-info-panel>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<Props of="my-info-panel" />
+
+## Variations
+
+###### Custom Title
+
+<Story name="Custom Title">
+  {html`
+    <my-info-panel .title=${'Hello World'}></my-info-panel>
+  `}
+</Story>
