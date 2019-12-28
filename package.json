@@ -20,24 +20,26 @@
     "test:prune-snapshots": "karma start --prune-snapshots",
     "test:bs": "karma start karma.bs.config.js --coverage",
     "storybook": "start-storybook --node-resolve --watch --open",
-    "storybook:build": "build-storybook"
+    "storybook:build": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
     "lit-html": "^1.1.2",
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
-    "es-dev-server": "^1.23.0",
-    "eslint": "^6.1.0",
+    "@open-wc/demoing-storybook": "^1.0.1",
     "@open-wc/eslint-config": "^2.0.0",
     "@open-wc/prettier-config": "^0.1.10",
-    "husky": "^1.0.0",
-    "lint-staged": "^8.0.0",
-    "@open-wc/testing-karma": "^3.0.0",
-    "deepmerge": "^3.2.0",
-    "@open-wc/testing-karma-bs": "^1.0.0",
     "@open-wc/testing": "^2.0.0",
-    "@open-wc/demoing-storybook": "^1.0.1"
+    "@open-wc/testing-karma": "^3.0.0",
+    "@open-wc/testing-karma-bs": "^1.0.0",
+    "@storybook/storybook-deployer": "^2.8.1",
+    "deepmerge": "^3.2.0",
+    "es-dev-server": "^1.23.0",
+    "eslint": "^6.1.0",
+    "husky": "^1.0.0",
+    "lint-staged": "^8.0.0"
   },
   "eslintConfig": {
     "extends": [
