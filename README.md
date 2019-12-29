@@ -2,6 +2,8 @@
 
 This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
+[Demo / Storybook](https://sergicontre.github.io/my-info-panel/)
+
 ## Installation
 ```bash
 npm i my-info-panel
