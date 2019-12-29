@@ -24,6 +24,8 @@ steps:
     BROWSER_STACK_USERNAME: $(BROWSER_STACK_USERNAME)
 
 - script: |
-    npm run deploy-storybook -- --ci --host-token-env-variable=$(GITHUB_TOKEN)
+    npm run deploy-storybook -- --ci 
   displayName: 'deploy storybook'
+  env:
+    GH_TOKEN: $(GITHUB_TOKEN)
  
